@@ -1,5 +1,7 @@
 # playwright Generative AI
 
+### This repo is based on https://github.com/kying18/palm-api-projects/tree/main from @kying18 but uses Playwright instead.
+
 ### Using Playwright with Python and Google Generative AI for recommendation 
 
 This is an example of how to Playwright to scrap a website, collect reviews from users and process them using
