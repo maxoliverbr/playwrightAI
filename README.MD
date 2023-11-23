@@ -1,6 +1,6 @@
 # playwright Generative AI
 
-### This repo is based on https://github.com/kying18/palm-api-projects/tree/main from @kying18 but uses Playwright instead.
+#### This repo is based on https://github.com/kying18/palm-api-projects/tree/main from @kying18 but uses Playwright instead.
 
 ### Using Playwright with Python and Google Generative AI for recommendation 
 
@@ -19,11 +19,11 @@ Required tools:
 - Google PaLM Generative AI
 - PlayWright
 - Python
-- Github Actions
 
-Github Actions Workflow is activated only if a push is made to the tests folder. 
-
-After each run artifacts are uploaded and retained for 30 days. 
+Problems found:
+- Google model does not work with Brazilian Portuguese so we had to stick with English reviews.
+- URL needed to add `hl=en` so reviews are not translated by default causing async issues.
+- Some reviews trigger Google safety blocks and return `None` as the result of completition. 
 
 Todo:
 - [ ] Implement error handling for SAFETY feedback from API 
