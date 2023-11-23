@@ -11,6 +11,10 @@ from config import REVIEW_LOCATOR
 
 
 async def reviewscrap():
+    """
+    Function to scrap reviews from Google.
+    :return: list of reviews
+    """
     async with async_playwright() as p:
         width = 1024
         height = 3000
@@ -33,6 +37,12 @@ async def reviewscrap():
 
 
 def reviewai(reviews, m):
+    """
+    Process the list of reviews using Google Generative AI model and prompt.
+    :param reviews: list of reviews
+    :param m: model
+    :return: string with answer to prompt
+    """
     prompt = "I'm a manager of a sports bar and collected the reviews below from clients. \
               Can you summarize the action items to better serve the clients?"
 
