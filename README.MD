@@ -26,3 +26,7 @@ After each run artifacts are uploaded and retained for 30 days.
 Todo:
 - [ ] Implement error handling for SAFETY feedback from API 
 - [ ] Implement translation API for reviews that are not in English
+
+More information:
+[PaLM API: Text Quickstart with Python
+](https://developers.generativeai.google/tutorials/text_quickstart?authuser=3)
